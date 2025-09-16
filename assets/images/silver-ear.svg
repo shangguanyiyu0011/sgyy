@@ -1,0 +1,20 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="silverEarBg" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#F2F6FF" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#B7D3FF" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="220" height="220" rx="32" fill="#E8F0FF"/>
+  <g filter="url(#blur)">
+    <circle cx="110" cy="110" r="78" fill="url(#silverEarBg)"/>
+    <path d="M110 46C90 60 68 78 68 102C68 126 86 150 110 156C134 162 152 148 158 128C166 100 138 66 110 46Z" fill="#FDFEFF" opacity="0.8"/>
+    <path d="M118 70C130 84 144 102 144 120C144 134 138 146 122 152" stroke="#A7BEEA" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  </g>
+  <defs>
+    <filter id="blur" x="28" y="26" width="164" height="168" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+</svg>
