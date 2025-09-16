@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#F6C790" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#F59C6D" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0B0D13" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFAD73" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F9C784" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0B0D13"/>
+  <g opacity="0.55">
+    <circle cx="900" cy="120" r="220" fill="url(#glow)"/>
+    <circle cx="200" cy="200" r="180" fill="url(#glow)"/>
+    <circle cx="1000" cy="620" r="200" fill="url(#glow)"/>
+  </g>
+  <g opacity="0.35">
+    <path d="M-20 520C140 450 280 470 420 540C560 610 700 650 840 600C980 550 1120 430 1260 460V820H-20V520Z" fill="url(#wave)"/>
+    <path d="M-60 600C80 560 220 600 360 660C500 720 640 760 780 720C920 680 1060 560 1200 580V820H-60V600Z" fill="url(#wave)" opacity="0.7"/>
+  </g>
+  <g stroke="#FFB37D" stroke-opacity="0.2">
+    <path d="M80 120L240 80L360 160L520 120" stroke-width="1.4"/>
+    <path d="M960 220L1080 180L1180 260" stroke-width="1.4"/>
+    <path d="M300 620L420 580L520 660L640 620" stroke-width="1.2"/>
+  </g>
+</svg>

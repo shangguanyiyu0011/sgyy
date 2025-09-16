@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珍馔之藏：十二味干货的烹饪艺术指南</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__pretitle">互动食材故事馆</p>
+      <h1>珍馔之藏：十二味干货的烹饪艺术指南</h1>
+      <p class="hero__subtitle">跟随时间与火候的韵律，唤醒来自山川林海的珍馔灵魂。</p>
+      <a class="hero__cta" href="#foreword">开启探索</a>
+    </div>
+    <div class="hero__scroll">向下滚动探索</div>
+  </header>
+
+  <nav class="floating-nav" aria-label="章节导航">
+    <button class="floating-nav__toggle" aria-expanded="false">章节导航</button>
+    <div class="floating-nav__panel" id="nav-links"></div>
+  </nav>
+
+  <main>
+    <section class="panel" id="foreword">
+      <div class="section-title">
+        <span>前言</span>
+        <h2>浓缩风味的灵魂</h2>
+      </div>
+      <div class="grid" id="foreword-content"></div>
+    </section>
+
+    <section class="panel" id="awakening">
+      <div class="section-title">
+        <span>第一部分</span>
+        <h2>唤醒的艺术——干货泡发大师指南</h2>
+      </div>
+      <div class="stacked" id="awakening-intro"></div>
+
+      <div class="interactive-block" id="water-temperature">
+        <h3>水温的三位一体：冷水、温水与热水泡发法</h3>
+        <p class="block-intro">选择合适的泡发水温，是速度与品质之间的一场博弈。点击下方按钮，探索不同水温的奥秘。</p>
+        <div class="tab-control" id="water-tabs"></div>
+      </div>
+
+      <div class="interactive-block" id="special-treatment">
+        <h3>炼金术师的点拨：特殊食材的处理秘诀</h3>
+        <p class="block-intro">选择一味珍馔，跟随互动流程掌握专属技巧。</p>
+        <div class="treatment-grid">
+          <div class="treatment-menu" id="treatment-menu" role="tablist"></div>
+          <div class="treatment-content" id="treatment-content" role="tabpanel"></div>
+        </div>
+      </div>
+
+      <div class="interactive-block" id="safety">
+        <h3>关乎安全的重要提示</h3>
+        <p class="block-intro">泡发需谨慎，牢记下列守则以远离米酵菌酸的风险。</p>
+        <ul class="safety-list" id="safety-list"></ul>
+      </div>
+    </section>
+
+    <section class="panel" id="quick-reference">
+      <div class="section-title">
+        <span>第二部分</span>
+        <h2>烹饪珍宝的宝典</h2>
+        <p class="section-lead">一张速查表，汇聚十二味干货的风味、泡发方式与处理要点。使用筛选器快速查找所需信息。</p>
+      </div>
+      <div class="filter-bar">
+        <label for="method-filter">按泡发方式筛选：</label>
+        <select id="method-filter">
+          <option value="all">全部</option>
+        </select>
+      </div>
+      <div class="table-wrapper">
+        <table id="reference-table" aria-describedby="quick-reference">
+          <thead>
+            <tr>
+              <th scope="col">食材</th>
+              <th scope="col">风味与口感</th>
+              <th scope="col">建议泡发方式</th>
+              <th scope="col">浸泡时间</th>
+              <th scope="col">处理要点</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="recipe-explorer">
+      <div class="section-title">
+        <span>互动体验</span>
+        <h2>食谱灵感探索器</h2>
+        <p class="section-lead">从十二味干货中选择一味珍馔，生成专属的食谱图鉴。点击卡片可展开步骤细节。</p>
+      </div>
+      <div class="explorer-controls">
+        <label for="ingredient-select">选择食材：</label>
+        <select id="ingredient-select"></select>
+      </div>
+      <div class="recipe-gallery" id="recipe-gallery" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" id="chapters">
+      <div class="section-title">
+        <span>十二章</span>
+        <h2>珍馔档案馆</h2>
+        <p class="section-lead">逐一走近十二味干货，阅读它们的故事、处理秘诀与五款匠心食谱。</p>
+      </div>
+      <div class="chapter-list" id="chapter-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>您的烹饪之旅由此启程</h3>
+      <p>从理解干货浓缩风味的哲学，到掌握泡发与烹饪的技艺，愿这座互动馆成为您厨房中灵感不断的伙伴。</p>
+    </div>
+    <button class="back-to-top" id="back-to-top" aria-label="返回顶部">返回顶部</button>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
